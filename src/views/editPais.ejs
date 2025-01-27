@@ -1,0 +1,58 @@
+<body>
+    <div class="body-formulario fondo-oscuro">
+    <div class="formulario-container">
+        <h1>Editar <%- pais.Nombre %></h1>
+        <form id="formEditar">
+            <input type="hidden" name="id" value="<%= id %>">
+
+            <div class="form-grupo">
+                <label for="nombrePais">Nombre:</label>
+                <input type="text" id="nombrePais" name="nombrePais" minlength="3" maxlength="90"
+                    required
+                    value="<%= pais.Nombre %>" ><br><br>
+            </div>
+
+            <div class="form-grupo">
+                <label for="capital">Capital: (separados por comas en caso de ser más de una)</label>
+                <input type="text" id="capital" name="capital" minlength="3" required
+                value="<%= pais.capital %>"><br><br>
+            </div>
+
+            <div class="form-grupo">
+                <label for="fronteras">Fronteras (separados por comas):</label>
+                <input type="text" id="fronteras" name="fronteras" minlength="3"
+                value="<%= pais.fronteras %>"><br><br>
+            </div>
+
+            <div class="form-grupo">
+                <label for="area">Área:</label>
+                <input type="number" id="area" name="area" min="0" require
+                value="<%= pais.area %>"><br><br>
+            </div>
+
+            <div class="form-grupo">
+                <label for="poblacion">Población:</label>
+                <input type="number" id="poblacion" name="poblacion" min="0"  required
+                value="<%= pais.poblacion %>"><br><br>
+            </div>
+
+            <h2>Indice gini</h2>
+            <div class="form-grupo">
+                <label for="aniogini">Año:</label>
+                <input type="number" id="aniogini" name="aniogini" min="0" max="2024"required>&nbsp;<br><br>
+                <label for="valorgini">Valor:</label>
+                <input type="number" id="valorgini" name="valorgini" min="0" max="100" required><br><br>
+            </div>
+
+            <div class="form-grupo">
+                <label for="timezones">Zonas horarias (separadas por comas):</label>
+                <input type="text" id="timezones" name="timezones" minlength="3"
+                value="<%= pais.timezones %>"><br><br>
+            </div>
+
+
+            <button type="submit" id="btnEditarPais" class="boton-aceptar">Guardar</button>
+        </form>
+        <script src="/js/editScripts.js"> </script>
+    </div>
+</body>

@@ -1,0 +1,19 @@
+{
+  "name": "sprint5-trabajofinal",
+  "version": "1.0.0",
+  "description": "_El objetivo es hacer un repaso para fijar los conocimientos necesarios para poder desarrollar un servidor en NodeJS (con arquitectura MVC con capas)._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.9.5"
+  }
+}

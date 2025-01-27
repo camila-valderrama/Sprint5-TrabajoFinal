@@ -1,0 +1,31 @@
+<body>
+    <div class="list-container fondo-oscuro">
+    <div><h1 class="titulo">Países</h1></div>
+
+    <div class="card-container">
+    <% paises.forEach(pais =>{ %>
+        <div class="card">
+            <h2><%= pais.name.nativeName.spa.official %></h2>
+            <ul>
+                <li><b>Capital: </b><%= pais.capital %></li>
+                <li><b>Límites:</b> <%= pais.borders.join(", ") %></li>
+                <li><b>Área:</b> <%= pais.area %></li>
+                <li><b>Población:</b> <%= pais.population %></li>
+
+                <li><b>Zonas horarias:</b> <%= pais.timezones.join(", ") %></li>
+                <li><b>Creador:</b> <%= pais.creador %></li>
+            </ul>
+            <div class="button-container">
+
+                <button class="button button-editar" id="editar-<%= pais._id %>" value="<%= pais._id %>">Editar</button>
+                <button class="button button-eliminar" id="eliminar-<%= pais._id %>"  value="<%= pais._id %>">Eliminar</button>
+            </div>
+        </div>
+
+        <!-- <input type="button"  id="<%= 'btn' + pais.id %>" value="Editar" onclick="editarSuperpais(<%= pais.id %>)"> -->
+        <!-- <input type="button"  id="<%= pais.id %>" value="Editar" > -->
+   <%  }) %>
+</div>
+   <script src="/js/dashboardScripts.js"> </script>
+</div>
+</body>

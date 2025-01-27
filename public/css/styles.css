@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    background: url('/img/mundo_fondo.jpg') no-repeat  fixed;
+    background-size: cover;
+    /* color: #fff; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.body-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+}
+.titulo {
+    text-align: center;
+    color: white;
+    margin: 50px;
+
+}
+.titulo-form {
+    text-align: center;
+    color: black;
+    margin: 50px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.card h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+ul, ol {
+    list-style-type: none; /* Quita las viñetas de las listas */
+    align-items: start;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.button-editar  {
+    background-color: rgb(96, 158, 96);
+    color: white;
+}
+.button-eliminar {
+    background-color: #bb5450;
+    color: white;
+}
+.button-agregar {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    background-color: #4777bee5;
+    color: white;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+.formulario-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+     max-width: 800px;
+     min-height: 88vh ;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.form-grupo {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.form-grupo-check {
+    margin-bottom: 20px;
+    display: flex;
+    align-items:flex-start;
+}
+
+.form-grupo label {
+
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+.form-grupo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-grupo input[type=number]{
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-grupo-check  label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario-container h2{
+    text-align: left;
+}
+
+.boton-editar , .boton-aceptar{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(96, 158, 96);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+}
+.boton-editar , .boton-aceptar:hover {
+    opacity: 0.8;
+}
+.navbar {
+    background-color: rgb(188, 231, 245);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: rgb(103, 190, 219);
+    color: black;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: calc(100vh - 60px - 58px ); /* resta el alto del footer y el alto del navbar , y el padding*/
+    margin-top: 80px; /* Espacio para el navbar fijo */
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+.fondo-oscuro{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.list-container {
+    width: 100%;
+    padding: 30px;
+    min-height: 100vh;
+
+}
+
+footer {
+    background-color: rgb(188, 231, 245);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+
+}
