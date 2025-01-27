@@ -9,7 +9,7 @@ _CSS_
 _JavaScript_
 
 ## Pasos para ejecutar la app:
-_En la terminal, ejecutar node src/app.mjs. Sino, ir al siguiente link del proyecto deployado en render_
+_En la terminal, ejecutar node src/app.mjs. Sino, ir al siguiente link del proyecto deployado en render: https://sprint5-trabajofinalserver.onrender.com/ _
 
 ## Agradecimientos:
 _Nodo Tecnológico de Catamarca y sus profesores que nos guiaron en este módulo._
